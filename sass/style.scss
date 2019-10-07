@@ -2,12 +2,8 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    box-sizing: border-box;
 }
 body {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.7;
     margin: 0;
     font-size: 16px;
     line-height: 1.7;
@@ -16,158 +12,152 @@ body {
     max-width: 1140px;
     padding: 0 20px;
     margin: 0 auto;
-    max-width: 1140px;
-    padding: 40px 20px;
-    margin: 0 auto;
     text-align: center;
 }
 .navigation {
     padding: 40px 0;
-    padding: 40px 0;
     background-image: url(https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    @@ -29,63 +25,63 @@ body {
-        position: relative;
+    position: relative;
     }
-    .navigation ul {
-        margin: 0;
-        padding: 0 0;
-        list-style-type: none;
-        text-align: right;
-        margin: 0;
-        padding: 0 0;
-        list-style-type: none;
-        text-align: right;
+.navigation ul {
+    margin: 0;
+    padding: 0 0;
+    list-style-type: none;
+    text-align: right;
+}
+.logo {
+    text-align: left;
+    padding-right: 300px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #f39c12;
+}
+.navigation li {
+    display: inline-block;
+    margin-left: 36px;
+    margin-right: 36px;
+    position: relative;
+}
+.navigation a {
+    text-decoration: none;
+    color: #ecf0f1;
+}
+a:hover {
+    color: #ff5252;
+}
+.navigation ul ul li {
+    display: block;
+    margin: 0 0 12px 0;
+}
+.navigation ul ul {
+    display: none;
+}
+.navigation li:hover ul { 
+    display: block;
+    text-align: center;
+    position: absolute;
+    background: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 24px;
+}
+.navigation ul ul:hover a {
+    color: #33d9b2;
+    display: block;
+    padding: 0 24;
+}
+.btn {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: darkgoldenrod;
+}
+a:hover {
+    color: #ff5252;
     }
-    .logo {
-        text-align: left;
-        padding-right: 300px;
-        font-family: 'Dancing Script', cursive;
-        font-family: 'Lobster', cursive;
-        font-size: 30px;
-        color: #f39c12;
-    }
-    .navigation li {
-        display: inline-block;
-        margin-left: 36px;
-        margin-right: 36px;
-        position: relative;
-        display: inline-block;
-        margin-left: 36px;
-        margin-right: 36px;
-        position: relative;
-    }
-    .navigation a {
-        text-decoration: none;
-        color: #ecf0f1;
-        text-decoration: none;
-        color: #ecf0f1;
-    }
-    a:hover {
-        color: #ff5252;
-        color: #ff5252;
-    }
-    .navigation ul ul li {
-        display: block;
-        margin: 0 0 12px 0;
-        display: block;
-        margin: 0 0 12px 0;
-    }
-    .navigation ul ul {
-        display: none;
-        display: none;
-    }
-    .navigation li:hover ul { 
-        display: block;
-        text-align: center;
-        position: absolute;
-        background: #ffffff;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0 24px;
-        display: block;
-        text-align: center;
-        position: absolute;
-        background: #ffffff;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0 24px;
-    }
-    .navigation ul ul:hover a {
-        color: #33d9b2;
-        display: block;
-        padding: 0 24;
-        color: #33d9b2;
-        display: block;
-        padding: 0 24;
-    }
-    .btn {
-        display: block;
-        width: 160px;
-        margin: 0 auto;
-        padding: 16px;
-        border-radius: 5px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        transition: $transition;
-        display: block;
-        width: 160px;
-        margin: 0 auto;
-        padding: 16px;
-        border-radius: 5px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        transition: $transition;
-        background-color: darkgoldenrod;
-    }
-    .splash {
-        @@ -94,17 +90,42 @@ a:hover {
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            font-family: 'Mansalva', cursive;
-            color: azure;
+.splash {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Mansalva', cursive;
+    color: #f5f6fa;
+    display: inline;
+}
+.page-title, .page-subtitle {
+    text-align: center;
+    font-family: 'Mansalva', cursive;
+    color: #f5f6fa;
+}
+.page-title {
+    font-size: 30px;
+}
+.page-subtitle {
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+.icon {
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: solid darkgoldenrod;
+    color: darkgoldenrod;
+}
+.col-4 {
+    text-align: center;
+}
+.service {
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+col-sm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+img {
+    flex: 0 0 33.333%;
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+}
+.portfolio{
+    background: #ecf0f1;
+    height: 1000px;
+    padding-bottom: 30px;
+}
 
-            font-family: 'Lobster', cursive;
-            color: #f5f6fa;
+/*Footer*/
+.footer {
+    height: 100px;
+}
 
-        }
-        .page-title, .page-subtitle {
-            text-align: center;
-            font-family: $font-header;
-            color: #f5f6fa;
-        }
-        .page-title {
-            font-size: 30px;
-        }
-        .page-subtitle {
-            padding-bottom: 40px;
-            font-size: 40px;
-        }
-        .icon {
-            line-height: 70px;
-            width: 70px;
-            height: 70px;
-            background: #ffffff;
-            font-size: 30px;
-            border-radius: 50%;
-            text-align: center;
-            border: solid darkgoldenrod;
-            color: darkgoldenrod;
-        }
-        .col-4 {
-            text-align: center;
-        }
-        .service {
-            font-size: 60px;
-            font-family: 'Josefin Sans', sans-serif;
-        }
-        p {
-            font-family: 'Josefin Sans', sans-serif;
-            font-size: 20px;
-            font-style: italic;
+.links a {
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background: #1e272e;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    border: 2px;
+    color: #f5f6fa;
+    margin: 15px;
+}
